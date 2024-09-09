@@ -1,0 +1,123 @@
+body{
+    background:black;
+}
+#logo{
+    width: 100px;
+    height: 100px;
+}
+#logo img{
+    width: 100%;
+}
+
+#name{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.Heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    animation: mymove 4s infinite;
+    font-weight: bolder;
+}
+@keyframes mymove {
+    from {color: white;}
+    to {color: rgb(255, 196, 2);}
+}
+.sudoku_grid{
+    display: flex;
+    flex-direction: row;
+    max-width: 578px;
+    flex-wrap: wrap;
+    box-shadow: bisque;
+    margin: 10px auto ;
+}
+
+.sudoku_grid div{
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-size: 40px;
+
+    box-sizing: border-box;
+}
+
+.Buttons{   
+    display: flex;
+    justify-content: center;
+    width: 100%;    
+    margin-top:50px;
+    margin-bottom: 80px;
+}
+
+#GetPuzzle,#SolvePuzzle{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: #0ed1f3;
+    padding: 10px 35px;
+    font-size: 24px;
+    border: 1px solid #352b8fd7;
+    box-shadow: inset 0px 1px 0px rgba(255,255,255,.3);
+    border-radius: 10%;
+    margin-left:20px;
+    margin-right: 20px;
+}
+#GetPuzzle:hover , #SolvePuzzle:hover{
+    cursor: pointer;
+    background-color: #94d9eb;
+}
+.box1{
+    background-color: #ecb1e0e8;
+    border: 2px solid  white;
+}
+
+.box1:hover{
+    background-color: #e483ec;
+    color: black;
+}
+
+.box2{
+    background-color: #e7ee84;
+    border: 2px solid  white;
+}
+.box2:hover{
+    background-color: rgb(215, 218, 53);
+}
+
+.box3{
+    background-color: #c7cfa0c7;
+    border: 2px solid  rgb(255, 255, 255);
+}
+.box3:hover{
+    background-color: #cfd8a5f3;
+    color: black
+}
+
+.bl{
+    border-left: 4px solid black;
+}
+
+.bb{
+    border-bottom: 4px solid black;
+}
+
+.br{
+    border-right: 4px solid black;
+}
+
+.bt{
+    border-top: 4px solid black;
+}
